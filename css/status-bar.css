@@ -1,0 +1,25 @@
+#state-bar {
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  font-size: 22px;
+}
+.state-bar__column {
+  width: 33%;
+}
+.state-bar__column span {
+  margin-right: 5px;
+}
+.state-bar__column:nth-child(2) {
+  display: flex;
+  justify-content: center;
+}
+/* :nth-child 할때는 무조건 띄어쓰기 주의 */
+.state-bar__column:last-child {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.state-bar__column .fa-battery-full {
+  margin-right: 5px;
+}

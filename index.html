@@ -9,7 +9,7 @@
 
   <body>
     <header>
-      <div class="state-bar">
+      <div id="state-bar">
         <div class="state-bar__column">
           <span>No Service</span>
           <i class="fas fa-wifi"></i>
@@ -24,25 +24,19 @@
         </div>
       </div>
     </header>
-    <main>
-      <span>Welcome to KakaoTalk</span>
-      <p>
+    <main class="welcome-header">
+      <span class="welcome-header__title">Welcome to KakaoTalk</span>
+      <p class="welcome-header__text">
         If you have a Kakao Account, log in with your email or phone number.
       </p>
-      <input
-        type="text"
-        id="Welcomepage__emailorphonenumber"
-        placeholder="Email or phone number"
-      />
-      <input
-        type="password"
-        id="Welcomepage__password"
-        placeholder="Password"
-      />
-      <input type="submit" value="Log In" id="Welcomepage__login" />
-      <input type="submit" value="Sign Up" id="Welcomepage__signup" />
-      <a href="#">Find Kakao Account or Password</a>
     </main>
+    <form id="login-form" action="friend.html">
+      <input type="text" placeholder="Email or phone number" />
+      <input type="password" placeholder="Password" />
+      <input type="submit" value="Log In" />
+      <input type="submit" value="Sign Up" />
+      <a href="#">Find Kakao Account or Password</a>
+    </form>
     <footer></footer>
     <script
       src="https://kit.fontawesome.com/f5557ec70b.js"
